@@ -1,7 +1,7 @@
 .banner {
     text-align: center;
     padding: 1px 20px;
-    color: white;
+    color: #ffffff;
     position: relative;
     overflow: hidden;
     margin-top: 1px;
@@ -17,6 +17,7 @@
     height: 100%;
     border-radius: 10px;
     overflow: hidden;
+    border: 1px solid #00f028;
 }
 
 .slideshow img {

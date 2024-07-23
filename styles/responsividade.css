@@ -41,6 +41,27 @@
     #contato h4 {
         font-size: 16px;
     }
+    .destinos-container,.atividades-container {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 0px; 
+    padding: 0 10px; 
+    }
+    .destino-card,
+.atividade-card {
+    border-radius: 10px; 
+    border: 3px solid #6d9473;
+    padding: 15px;
+    margin: 10px;
+    background-color: #b7e7cd; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    transition: transform 0.3s ease; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    text-align: center; 
+    box-sizing: border-box; 
+}
 }
 
 @media (max-width: 768px) {
@@ -194,5 +215,97 @@
         max-width: 100%; 
         display: block;
         margin: 0 auto;
+    }
+    .destinos-container, .atividades-container {
+        display: grid; 
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
+        gap: 0px; 
+        padding: 0 10px; 
+    }
+    .destino-card,
+.atividade-card {
+    border-radius: 8px; 
+    border: 2px solid #6d9473; 
+    padding: 10px; 
+    margin: 5px; 
+    background-color: #b7e7cd; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    transition: transform 0.3s ease; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    text-align: center; 
+    box-sizing: border-box; 
+    max-width: 100%; 
+    width: 100%; 
+}
+}
+@media (max-width: 600px) {
+    .destinos-container, .atividades-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .destino-card,
+    .atividade-card {
+        border-radius: 8px; 
+        border: 2px solid #6d9473; 
+        padding: 10px; 
+        margin: 5px; 
+        background-color: #b7e7cd; 
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+        transition: transform 0.3s ease; 
+        display: flex; 
+        flex-direction: column; 
+        justify-content: space-between; 
+        text-align: center; 
+        box-sizing: border-box; 
+        max-width: 100%; 
+        width: 100%; 
+    }
+    
+}
+
+@media (max-width: 400px) {
+    .destinos-container,.atividades-container {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+    .destino-card,
+    .atividade-card {
+        border-radius: 8px; 
+        border: 2px solid #6d9473; 
+        padding: 10px; 
+        margin: 5px; 
+        background-color: #b7e7cd; 
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+        transition: transform 0.3s ease; 
+        display: flex; 
+        flex-direction: column; 
+        justify-content: space-between; 
+        text-align: center; 
+        box-sizing: border-box; 
+        max-width: 350px; 
+        width: 100%; 
+    }
+}
+
+@media (max-width: 250px) {
+    .destinos-container,.atividades-container {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+    .destino-card,
+    .atividade-card {
+        border-radius: 8px; 
+        border: 2px solid #6d9473; 
+        padding: 10px; 
+        margin: 5px; 
+        background-color: #b7e7cd; 
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+        transition: transform 0.3s ease; 
+        display: flex; 
+        flex-direction: column; 
+        justify-content: space-between; 
+        text-align: center; 
+        box-sizing: border-box; 
+        max-width: 200px; 
+        width: 100%;
     }
 }

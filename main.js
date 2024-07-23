@@ -92,3 +92,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+function openModal(element) {
+    var modal = document.getElementById('modal');
+    var modalImg = document.getElementById('modal-image');
+    modalImg.src = element.src;
+    modal.classList.add('open');
+    var modalContent = document.querySelector('.modal-content');
+    modalContent.classList.add('open');
+}
+
+function closeModal() {
+    var modal = document.getElementById('modal');
+    modal.classList.remove('open');
+    var modalContent = document.querySelector('.modal-content');
+    modalContent.classList.remove('open');
+}
