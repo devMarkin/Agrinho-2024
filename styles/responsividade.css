@@ -239,6 +239,32 @@
     max-width: 100%; 
     width: 100%; 
 }
+#contato {
+    padding: 20px;
+    margin: 20px auto;
+}
+
+#contato h2 {
+    font-size: 24px;
+}
+
+#contato h3 {
+    font-size: 20px;
+}
+
+#contato h4 {
+    font-size: 16px;
+}
+
+#contato-form input,
+#contato-form textarea {
+    max-width: 100%;
+}
+
+#contato-form button {
+    font-size: 14px;
+    max-width: 100%;
+}
 }
 @media (max-width: 600px) {
     .destinos-container, .atividades-container {
@@ -284,6 +310,26 @@
         box-sizing: border-box; 
         max-width: 350px; 
         width: 100%; 
+    }
+    #contato {
+        padding: 15px;
+        margin: 15px auto;
+    }
+
+    #contato h2 {
+        font-size: 20px;
+    }
+
+    #contato h3 {
+        font-size: 18px;
+    }
+
+    #contato h4 {
+        font-size: 14px;
+    }
+
+    #contato-form button {
+        font-size: 12px;
     }
 }
 

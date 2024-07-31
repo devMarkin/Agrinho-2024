@@ -93,18 +93,28 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-function openModal(element) {
-    var modal = document.getElementById('modal');
-    var modalImg = document.getElementById('modal-image');
-    modalImg.src = element.src;
-    modal.classList.add('open');
-    var modalContent = document.querySelector('.modal-content');
-    modalContent.classList.add('open');
+var modal = document.getElementById('myModal');
+
+
+var modalImg = document.getElementById('modalImage');
+
+var imgs = document.querySelectorAll('.destino-imagem, .atividade-imagem');
+
+imgs.forEach(img => {
+    img.onclick = function() {
+        modal.style.display = 'block';
+        modalImg.src = this.src;
+    }
+});
+
+var span = document.getElementsByClassName('close')[0];
+
+span.onclick = function() {
+    modal.style.display = 'none';
 }
 
-function closeModal() {
-    var modal = document.getElementById('modal');
-    modal.classList.remove('open');
-    var modalContent = document.querySelector('.modal-content');
-    modalContent.classList.remove('open');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = 'none';
+    }
 }

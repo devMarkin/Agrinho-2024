@@ -77,13 +77,13 @@ section {
 }
 
 .texto-destaque {
-    background-color: #589421;
-    padding: 15px;
+    background-color: #2b5305;
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    max-width: 90%;
-    margin: 0 auto;
+    max-width: 100%;
+    margin: auto;
     box-sizing: border-box; 
 }
 
@@ -92,5 +92,46 @@ section {
     font-size: 24px; 
     margin-bottom: 10px;
 }
+#dicas {
+    background-color: #ffffff; 
+    padding: 40px;
+}
 
+#dicas h2,
+#dicas h3,
+#dicas h4 {
+    color: #000000;
+    text-align: center;
+}
+
+#dicas h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+#dicas h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+#dicas h4 {
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: #000000;
+}
+
+#dicas ul {
+    padding: 0; 
+}
+
+#dicas li {
+    margin-bottom: 15px; 
+    line-height: 1.6; 
+    font-size: 16px; 
+    color: #000000; 
+}
+
+#dicas strong {
+    font-weight: bold; 
+}
 
